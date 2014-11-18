@@ -1,6 +1,8 @@
 <?php
 session_start();
 
+include_once('core/database.php');
+
 ?>
 
 <?php include_once('includes/header.php'); ?>

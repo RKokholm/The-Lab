@@ -45,7 +45,7 @@ require_once('core/database.php');
 
 
 				<a href="index.php">
-					<img id="logo" src="graphics/thelab.png">
+					<img id="logo" src="graphics/icon.png">
 				</a>
 
 				<div id="loginarea">

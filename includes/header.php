@@ -1,5 +1,7 @@
 <?php
 
+include_once('core/database.php');
+
 ?>
 
 <!doctype html>
@@ -22,12 +24,11 @@
 
 					if (isset($_SESSION['user_id'])) {
 
-						echo '<nav>
-									<ul>
-										<li><a href="logout.php">Log out</a></li>
-									</ul>
-								</nav>';
-
+								echo '<nav>
+										<ul>
+											<li><a href="logout.php">Log out</a></li>
+										</ul>
+									</nav>';
 					} else {
 
 						echo '<nav>
@@ -46,7 +47,7 @@
 
 			<div id="headercenter">
 				<a href="index.php">
-					<img id="logo" src="graphics/thelab.png">
+					<img id="logo" src="graphics/icon.png">
 				</a>
 			</div>
 		
