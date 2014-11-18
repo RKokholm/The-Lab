@@ -1,14 +1,7 @@
-<!doctype html>
-<html>
+<?php
 
-	<head>
+include_once('includes/header.php');
 
-	</head>
+include_once('includes/footer.php');
 
-
-	<body>
-		Hej
-
-	</body>
-	
-<html>
+?>
