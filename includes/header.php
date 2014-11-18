@@ -1,6 +1,4 @@
 <?php
-session_start();
-
 
 ?>
 
@@ -22,11 +20,11 @@ session_start();
 
 					<?php
 
-					if (!isset($_SESSION)) {
+					if (isset($_SESSION['user_id'])) {
 
 						echo '<nav>
 									<ul>
-										<li><a href="#">Log out</a></li>;
+										<li><a href="logout.php">Log out</a></li>
 									</ul>
 								</nav>';
 
@@ -34,8 +32,8 @@ session_start();
 
 						echo '<nav>
 									<ul>
-										<li><a href="#">Log In</a></li>
-										<li><a href="#">Register</a></li>
+										<li><a href="login.php">Log In</a></li>
+										<li><a href="register.php">Sign Up</a></li>
 									</ul>
 						</nav>';
 					}

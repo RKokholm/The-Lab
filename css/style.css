@@ -53,6 +53,7 @@ section {
 	width: 52%;
 	height: 30px;
 	margin: auto;
+	border: 1px solid black;
 }
 
 #centertopheader ul {
@@ -90,9 +91,7 @@ section {
 
 #logo {
 	margin: 5px 0px 0px 67px;
-	display: block;
-	position: relative;
-	width: 22%;
+	width: 218px;
 }
 
 #headercenter {
