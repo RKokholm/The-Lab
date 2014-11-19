@@ -22,7 +22,7 @@ include_once('core/database.php');
 
 					<?php
 
-					if (isset($_SESSION['user_id'])) {
+					if (isset($_SESSION['id'])) {
 
 								echo '<nav>
 										<ul>
@@ -46,9 +46,44 @@ include_once('core/database.php');
 			</div>
 
 			<div id="headercenter">
-				<a href="index.php">
+				<a id="logolink" href="index.php">
 					<img id="logo" src="graphics/icon.png">
 				</a>
+
+			<?php
+			
+			 if ($_POST) {
+
+			 	$player = $_POST['player'];
+
+			 	$sql = "SELECT * FROM users WHERE username='$player'";
+
+			 	$query = mysql_query($sql);
+			 	$numrows = mysql_num_rows($query);
+
+
+			 		if ($numrows != 0) {
+
+			 			while($row = mysql_fetch_assoc($query)){
+
+			 				$playername = $row;
+
+			 			}
+
+
+			 		} else {
+			 			$noplayer = "That player doesn't exist!";
+			 		}
+
+
+			 }
+
+			?>	
+
+			<form id="searchform" action="#" method="POST">
+				<input id="playersearch" type="text" name="player" placeholder="Search a player">
+			</form>
+
 			</div>
 		
 		</div>

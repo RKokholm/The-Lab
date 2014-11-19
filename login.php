@@ -23,7 +23,7 @@ require_once('core/database.php');
 				if ($numrows==1) {
 
 					$row = mysql_fetch_assoc($query);
-					$_SESSION['user_id'] = $row['user_id'];
+					$_SESSION['id'] = $row['id'];
 					header('location: index.php');
 				} else {
 
