@@ -2,13 +2,23 @@
 
 include_once('core/database.php');
 
+	if (isset($_SESSION['id'])){
+
+		$query = mysql_query('SELECT username FROM users WHERE id="'.$_SESSION['id'].'"');
+
+		$username = mysql_fetch_assoc($query);
+
+		
+		
+	}
+
 ?>
 
 <!doctype html>
 <html>
 
 	<head>
-		<title>Laboratory</title>
+		<title>Draftpick</title>
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<meta charset="utf-8">
 	</head>
@@ -46,9 +56,37 @@ include_once('core/database.php');
 			</div>
 
 			<div id="headercenter">
+
 				<a id="logolink" href="index.php">
 					<img id="logo" src="graphics/icon.png">
 				</a>
+
+				<form id="searchform" action="#" method="POST">
+					<input id="playersearch" type="text" name="player" placeholder="Search player">
+				</form>
+
+			<?php
+
+				if(isset($_SESSION['id'])){
+
+
+					$query = mysql_query('SELECT username FROM users WHERE id="'.$_SESSION['id'].'"');
+
+					$row = mysql_fetch_assoc($query);
+					$username = $row['username'];
+
+
+					echo'<span id="loggedin">
+							<b id="loggedinas">Logged in as:</b><b id="username">'.$username.'</b>
+						</span>';
+					
+
+				}
+
+			?>
+				
+
+			</div>
 
 			<?php
 			
@@ -80,10 +118,6 @@ include_once('core/database.php');
 
 			?>	
 
-			<form id="searchform" action="#" method="POST">
-				<input id="playersearch" type="text" name="player" placeholder="Search a player">
-			</form>
-
 			</div>
 		
 		</div>
@@ -91,3 +125,14 @@ include_once('core/database.php');
 		<section>
 
 			<div id="content">
+
+				<div id="menuarea">
+							<ul>
+								<li><a href="#">Subject</a></li>
+								<li><a href="#">Subject</a></li>
+								<li><a href="#">Subject</a></li>
+								<li><a href="#">Subject</a></li>
+								<li><a href="#">Subject</a></li>
+							</ul>
+				</div>
+			</div>

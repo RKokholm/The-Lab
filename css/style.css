@@ -40,6 +40,8 @@ section {
   	background: -moz-linear-gradient(#EDEDED, #ECECEC); /* For Firefox 3.6 to 15 */
   	background: linear-gradient(#EDEDED, #ECECEC); /* Standard syntax */
 	border-bottom: 1px solid rgb(218, 218, 218);
+	z-index: 1;
+	position: relative;
 }
 
 #topheader {
@@ -50,6 +52,8 @@ section {
 	background: -o-linear-gradient(#3A546B, #1A4159);
 	background: -webkit-linear-gradient(#3A546B, #1A4159);
 	box-shadow: 0px 0px 1px 0px black;
+	position: relative;
+	z-index: 10;
 }
 
 #centertopheader {
@@ -60,6 +64,7 @@ section {
 
 #centertopheader ul {
 	float: right;
+	margin: 0px 17px 0px 0px;
 }
 
 #centertopheader ul li {
@@ -89,10 +94,12 @@ section {
 	width: 52%;
 	margin: auto;
 	position: relative;
+	border: 1px solid rgb(229, 229, 229);
+	background: #F2F2F2;
 }
 
 #logo {
-	margin: 5px 0px 0px 25px;
+	margin: 5px 0px;
 	width: 327px;
 }
 
@@ -103,8 +110,8 @@ section {
 }
 
 #playersearch {
-	margin: 18px 0px 0px 44px;
-	padding: 8px 36px 8px 12px;
+	margin: 18px 2%;
+	padding: 8px 77px 8px 12px;
 	font-family: verdana;
 	font-size: 16px;
 	border-radius: 4px;
@@ -114,4 +121,87 @@ section {
 
 #logolink {
 	float: left;
+	margin: 0px 0px 0px 50px;
+}
+
+
+#menu {
+	float: left;
+	display: block;
+	position: relative;
+	margin: 45px 0% 0% -46%;
+	width: 59px;
+	opacity: 0.9;
+}
+
+#menuarea {
+	height: 200px;
+	width: 138px;
+	background: linear-gradient(rgb(54, 94, 123), rgb(39, 65, 87));
+	background: -o-linear-gradient(rgb(54, 94, 123), rgb(39, 65, 87));
+	background: -moz-linear-gradient(rgb(54, 94, 123), rgb(39, 65, 87));
+	background: -webkit-linear-gradient(rgb(54, 94, 123), rgb(39, 65, 87));
+	margin: -8px 0px 0px 32px;
+	border-radius: 4px;
+	z-index: 0;
+	box-shadow: inset 0px -2px 3px 0px rgb(82, 115, 153), 1px 1px 2px 0px rgb(103, 103, 103);
+	border: 1px solid rgb(32, 55, 77);
+	position: absolute;
+	display: none;
+}
+
+#menuarea ul {
+	text-align: center;
+	margin: 12px 0px 0px 0px;
+}
+
+#menuarea ul li {
+	list-style-type: none;
+	padding: 8px 0px 8px 0px;
+}
+
+#menuarea ul li a {
+	color: white;
+	text-decoration: none;
+	font-family: verdana;
+	font-size: 14px;
+
+}
+
+#menuarea ul li:hover {
+	list-style-type: none;
+	padding: 8px 0px 8px 0px;
+	background: rgb(31, 67, 98);
+	box-shadow: inset 0px 0px 11px 1px rgb(17, 39, 65);
+}
+
+
+#loggedin {
+	width: 150px;
+	height: 24px;
+	background: linear-gradient(rgb(65, 95, 128), rgb(35, 72, 98));
+	float: right;
+	border-radius: 3px;
+	z-index: 0;
+	margin: -2px 14px 0px 0px;
+	box-shadow: 0px 1px 1px 0px rgb(82, 82, 82);
+	border: 1px solid rgb(34, 59, 87);
+}
+
+#username {
+	color: white;
+	font-size: 14px;
+	padding: 3px 0px 0px 7px;
+	display: block;
+	font-weight: bold;
+
+}
+
+#loggedinas {
+	color: white;
+	font-size: 13px;
+	padding: 5px 0px 0px 7px;
+	display: block;
+	float: left;
+	margin: 0px 7px 0px 0px;
 }

@@ -49,6 +49,9 @@ require_once('core/database.php');
 				</a>
 
 				<div id="loginarea">
+
+					<span id="logintitle">Log in</span>
+
 					<form action="login.php" id="loginform" method="POST">
 
 						<input type="text" name="username" placeholder="Username"><br>

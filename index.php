@@ -3,21 +3,12 @@ session_start();
 
 include_once('core/database.php');
 
-include_once('includes/header.php');
-
 ?>
 
 <?php include_once('includes/header.php'); ?>
 
-	<?php
 
-		if (isset($_SESSION['id'])) {
-			
-		}
-
-	?>
-
-					<?php
+			<?php
 
 				if (isset($playername)){
 
@@ -26,10 +17,12 @@ include_once('includes/header.php');
 				} 
 				
 				if (isset($noplayer)){	
-					//echo $noplayer;
+					echo $noplayer;
 				}
 
-				?>
+			?>
 
+
+	
 
 <?php include_once('includes/footer.php'); ?>

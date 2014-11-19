@@ -67,7 +67,7 @@ section {
 }
 
 #logo {
-	margin: 17px auto;
+	margin: 70px auto 17px auto;
 	width: 335px;
 	display: block;
 }
@@ -81,7 +81,7 @@ section {
 #loginarea {
 	margin: auto;
 	width: 250px;
-	height: 220px;
+	height: 240px;
 	background: #436584;
 	border-radius: 22px;
 	box-shadow: inset 0px -3px 2px rgb(95, 132, 174), 0px 2px 2px 0px rgb(40, 40, 40);
@@ -89,7 +89,6 @@ section {
 }
 
 #loginform {
-	padding: 20px;
 	margin: auto;
 	display: block;
 	width: 176px;
@@ -123,5 +122,15 @@ section {
 	color: rgb(144, 187, 223);
 	font-size: 13px;
 	font-family: verdana;
-	margin: -26px 0px 0px 0px;
+	margin: -7px 0px 0px 0px;
+}
+
+#logintitle {
+	font-family: sans-serif;
+	text-align: center;
+	display: block;
+	padding: 10px 0px 0px 0px;
+	font-size: 24px;
+	color: rgb(169, 206, 232);
+	text-shadow: 0px 2px 2px rgb(48, 68, 90);
 }

@@ -87,6 +87,9 @@ require_once('core/database.php');
 				</a>
 
 				<div id="registerarea">
+
+					<span class="regititle">Registration</span>
+
 					<form action="register.php" id="registerform" method="POST">
 
 						<input type="text" name="name" placeholder="Full name"><br>

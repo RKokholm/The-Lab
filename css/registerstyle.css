@@ -67,7 +67,7 @@ section {
 }
 
 #logo {
-	margin: 17px auto;
+	margin: 70px auto 17px auto;
 	width: 335px;
 	display: block;
 }
@@ -89,7 +89,6 @@ section {
 }
 
 #registerform {
-	padding: 20px;
 	margin: auto;
 	display: block;
 	width: 212px;
@@ -123,5 +122,16 @@ section {
 	color: rgb(144, 187, 223);
 	font-size: 13px;
 	font-family: verdana;
-	margin: -26px 0px 0px 0px;
+	margin: -15px 0px 0px 0px;
+	padding: 0px 0px 15px 0px;
+}
+
+.regititle {
+	font-family: sans-serif;
+	text-align: center;
+	display: block;
+	padding: 10px 0px 0px 0px;
+	font-size: 24px;
+	color: rgb(169, 206, 232);
+	text-shadow: 0px 2px 2px rgb(48, 68, 90);
 }
