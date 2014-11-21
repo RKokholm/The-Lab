@@ -21,6 +21,25 @@ include_once('core/database.php');
 		<title>Draftpick</title>
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<meta charset="utf-8">
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script type="text/javascript">
+
+			$(document).ready(function(){
+
+				console.log(1);
+
+				$("#menubutton").click(function(){
+
+					$('#menuarea').toggle(){
+
+
+					});
+
+				});
+
+			});
+
+		</script>
 	</head>
 
 
@@ -34,9 +53,20 @@ include_once('core/database.php');
 
 					if (isset($_SESSION['id'])) {
 
+						$query = mysql_query('SELECT username FROM users WHERE id="'.$_SESSION['id'].'"');
+
+						$row = mysql_fetch_assoc($query);
+						$username = $row['username'];
+
 								echo '<nav>
 										<ul>
-											<li><a href="logout.php">Log out</a></li>
+											<b id="loggedinas">Logged in as:</b><b id="username">'.$username.'</b>
+										</ul>
+									</nav>';
+
+								echo '<nav id ="logout">
+										<ul>
+											<b id="logoutlink"><a href="logout.php">Log Out</a></b>
 										</ul>
 									</nav>';
 					} else {
@@ -65,25 +95,12 @@ include_once('core/database.php');
 					<input id="playersearch" type="text" name="player" placeholder="Search player">
 				</form>
 
-			<?php
+				<div id="menubutton">
+					<b id="menubuttontext">
+						Menu
+					</b>
+				</div>
 
-				if(isset($_SESSION['id'])){
-
-
-					$query = mysql_query('SELECT username FROM users WHERE id="'.$_SESSION['id'].'"');
-
-					$row = mysql_fetch_assoc($query);
-					$username = $row['username'];
-
-
-					echo'<span id="loggedin">
-							<b id="loggedinas">Logged in as:</b><b id="username">'.$username.'</b>
-						</span>';
-					
-
-				}
-
-			?>
 				
 
 			</div>
@@ -124,15 +141,6 @@ include_once('core/database.php');
 
 		<section>
 
-			<div id="content">
+	<div id="content">
 
-				<div id="menuarea">
-							<ul>
-								<li><a href="#">Subject</a></li>
-								<li><a href="#">Subject</a></li>
-								<li><a href="#">Subject</a></li>
-								<li><a href="#">Subject</a></li>
-								<li><a href="#">Subject</a></li>
-							</ul>
-				</div>
-			</div>
+			
