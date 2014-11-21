@@ -26,18 +26,12 @@ include_once('core/database.php');
 
 			$(document).ready(function(){
 
-				console.log(1);
-
-				$("#menubutton").click(function(){
-
-					$('#menuarea').toggle(){
-
-
-					});
-
+				$('#menubutton').click(function(){
+					$('#menuarea').slideToggle();
 				});
-
 			});
+
+				
 
 		</script>
 	</head>

@@ -57,7 +57,7 @@ section {
 }
 
 #centertopheader {
-	width: 730px;
+	width: 800px;
 	height: 25px;
 	margin: auto;
 }
@@ -92,7 +92,7 @@ section {
 
 #content {
 	height: 100%;
-	width: 730px;
+	width: 800px;
 	margin: auto;
 	position: relative;
 	border: 1px solid rgb(229, 229, 229);
@@ -105,8 +105,8 @@ section {
 }
 
 #headercenter {
-	height: 70px;
-	width: 730px;
+	height: 63px;
+	width: 800px;
 	margin: auto;
 }
 
@@ -122,7 +122,7 @@ section {
 
 #logolink {
 	float: left;
-	padding: 8px 0px 0px 3%;
+	padding: 6px 0px 0px 3%;
 	width: 38%;
 	box-sizing: border-box;
 }
@@ -149,7 +149,8 @@ section {
 	box-shadow: inset 0px -2px 3px 0px rgb(82, 115, 153), 1px 1px 2px 0px rgb(103, 103, 103);
 	border: 1px solid rgb(32, 55, 77);
 	float: right;
-	margin: 0px 0px 0px 0px;
+	margin: -7px 16px 0px 0px;
+	display: none;
 }
 
 #menuarea ul {
@@ -224,29 +225,20 @@ section {
 }
 
 #menubutton {
-	width: 100px;
+	width: 140px;
 	height: 21px;
-	background: rgb(45, 76, 95);
-	display: block;
+	background: linear-gradient(rgb(43, 95, 141),rgb(31, 71, 97));
+	background: -o-linear-gradient(rgb(43, 95, 141),rgb(31, 71, 97));
+	background: -moz-linear-gradient(rgb(43, 95, 141),rgb(31, 71, 97));
+	background: -webkit-linear-gradient(rgb(43, 95, 141),rgb(31, 71, 97));
 	text-align: center;
 	float: right;
 	border-radius: 3px;
-	margin: 42px 39px;
+	margin: 41px 15px 0px 0px;
 	box-shadow: 0px 0px 1px 0px black;
-
-}
-
-#menubutton:hover {
-	width: 100px;
-	height: 21px;
-	background: rgb(45, 76, 95);
-	display: block;
-	text-align: center;
-	float: right;
-	border-radius: 3px;
-	margin: 42px 39px;
-	box-shadow: 0px 0px 1px 0px black;
+	border: 1px solid rgb(18, 49, 79);
 	cursor: pointer;
+
 }
 
 #menubuttontext {
