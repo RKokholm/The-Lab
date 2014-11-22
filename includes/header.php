@@ -26,7 +26,7 @@ include_once('core/database.php');
 
 			$(document).ready(function(){
 
-				$('#menubutton').click(function(){
+				$('#menuopen').click(function(){
 					$('#menuarea').slideToggle();
 				});
 			});
@@ -90,9 +90,6 @@ include_once('core/database.php');
 				</form>
 
 				<div id="menubutton">
-					<b id="menubuttontext">
-						Menu
-					</b>
 				</div>
 
 				

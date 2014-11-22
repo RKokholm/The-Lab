@@ -9,13 +9,18 @@ include_once('core/database.php');
 			
 			<div id="menuarea">
 				<ul>
-					<li><a href="#">Subject</li>
-					<li><a href="#">Subject</li>
-					<li><a href="#">Subject</li>
-					<li><a href="#">Subject</li>
-					<li><a href="#">Subject</li>
+					<li><a href="#">Champions</li>
+					<li><a href="#">Community</li>
+					<li><a href="#">Guides</li>
+					<li><a href="#">Streams</li>
+					<li><a href="#">Database</li>
 				</ul>
 			</div>
+
+					<div id="menuopen">
+						<img src="graphics/forward.png" id="menuarrow">
+					</div>
+
 			<?php
 
 				if (isset($playername)){
