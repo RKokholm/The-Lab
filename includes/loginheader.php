@@ -6,7 +6,7 @@
 <html>
 
 	<head>
-		<title>Laboratory</title>
+		<title>Draftpick | Login</title>
 		<link rel="stylesheet" type="text/css" href="css/loginstyle.css">
 		<meta charset="utf-8">
 	</head>
