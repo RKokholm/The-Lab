@@ -15,17 +15,15 @@ include_once('core/database.php');
 <?php
 
 	$query = mysql_query('SELECT * FROM categories ORDER BY category_title ASC');
-	$res = mysql_num_rows($query);
+	$numrows = mysql_num_rows($query);
 
-	$categories = "";
+	if ($numrows > 0){
 
-	if (mysql_num_rows($res) > 0){
-
-		while ($row = mysql_fetch_assoc($res)){
+		while ($row = mysql_fetch_assoc($query)){
 			$id = $row['id'];
 			$title = $row['category_title'];
 			$desc = $row['category_desc'];
-			$categories .= "<a href='#' class='cat_link'>".$title." - <font size='-1'>".$desc."</font></a>";
+			$categories = "<a href='view_category.php?cid=".$id."' class='cat_link'>".$title." - <font size='-1'>".$desc."</font></a><br>";
 
 			echo $categories;
 

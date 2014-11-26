@@ -206,7 +206,7 @@ section {
 #username {
 	color: white;
 	font-size: 14px;
-	padding: 4px 7px 0px 7px;
+	padding: 1px 7px 0px 7px;
 	display: block;
 	font-family: 'lucida grande',tahoma,verdana,arial,sans-serif;
 
@@ -215,7 +215,7 @@ section {
 #loggedinas {
 	color: white;
 	font-size: 13px;
-	padding: 5px 0px 0px 0px;
+	padding: 2px 0px 0px 0px;
 	display: block;
 	float: left;
 	margin: 0px 5px 0px 0px;

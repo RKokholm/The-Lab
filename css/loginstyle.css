@@ -82,10 +82,9 @@ section {
 	margin: auto;
 	width: 250px;
 	height: 240px;
-	background: #436584;
-	border-radius: 22px;
-	box-shadow: inset 0px -3px 2px rgb(95, 132, 174), 0px 2px 2px 0px rgb(40, 40, 40);
-
+	background: #3A546B;
+	border-radius: 7px;
+	box-shadow: inset 0px -3px 2px rgb(89, 110, 134), 0px 2px 2px 0px rgb(40, 40, 40);
 }
 
 #loginform {
@@ -107,7 +106,7 @@ section {
 #login {
 	width: 90px;
 	height: 35px;
-	background: #5FA2DD;
+	background: #6387A6;
 	border-radius: 14px;
 	box-shadow: inset 0px -1px 1px rgb(69, 100, 136), 0px 2px 2px 0px rgb(31, 60, 89);
 	margin: 19px auto;
