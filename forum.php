@@ -12,6 +12,7 @@ include_once('core/database.php');
 
 <div class="categoryheader"><span class="categorytitle">General</span></div>
 
+<div class="cat_area">
 <?php
 
 	$query = mysql_query('SELECT * FROM categories ORDER BY category_title ASC');
@@ -33,9 +34,13 @@ include_once('core/database.php');
 	}
 
 ?>
+</div>
 
 <div class="categoryheader"><span class="categorytitle">League of Legends</span></div>
 <div class="categoryheader"><span class="categorytitle">Social</span></div>
+
+	
+
 <div class="categoryheader"><span class="categorytitle">Support</span></div>
 
 

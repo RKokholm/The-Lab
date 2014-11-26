@@ -236,18 +236,6 @@ section {
 	width: 100%;
 }
 
-#menubutton {
-	width: 162px;
-	height: 21px;
-	background: linear-gradient(rgb(43, 95, 141),rgb(31, 71, 97));
-	background: -o-linear-gradient(rgb(43, 95, 141),rgb(31, 71, 97));
-	background: -moz-linear-gradient(rgb(43, 95, 141),rgb(31, 71, 97));
-	background: -webkit-linear-gradient(rgb(43, 95, 141),rgb(31, 71, 97));
-	margin: 42px 0px 0px 0px;
-	cursor: pointer;
-	position: absolute;
-	background: none;
-}
 
 #menuopen {
 	height: 35px;

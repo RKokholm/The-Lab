@@ -3,16 +3,28 @@ session_start();
 
 include_once('core/database.php');
 
+$cid = $_GET['cid'];
+
+$querytitle = mysql_query("SELECT category_title FROM categories WHERE id='$cid'");
+
+ if (mysql_num_rows($querytitle) > 0){
+
+ 	$title = mysql_fetch_assoc($querytitle);
+
+ }
+
+
+
 
 ?>
 
 <?php include_once('includes/forumheader.php') ?>
 
-<h1 id="forumtitle">Forum</h1>
+
+
+<h1 id="forumtitle"><?php echo $title['category_title']; ?></h1>
 
 <?php
-	
-$cid = $_GET['cid'];
 
 	if (isset($_SESSION['id'])){
 		$logged = "<a href='create_topic.php?cid=".$cid."'>Click here to create a topic</a>";

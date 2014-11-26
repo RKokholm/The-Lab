@@ -20,6 +20,7 @@ require_once('core/database.php');
  		if (empty($_POST) === false) {
  			$check = false;
  			$required_fields = array('name, username, password, repeatpassword, email');
+ 			
  			foreach($_POST as $key=>$value) {
  				if (empty($value) && in_array($key, $required_fields) === true) {
  				$check = true;
