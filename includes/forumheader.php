@@ -77,7 +77,7 @@ include_once('core/database.php');
 					<img id="logo" src="graphics/icon.png">
 				</a>
 
-				<form id="searchform" action="#" method="POST">
+				<form id="searchform" action="forumheader.php" method="POST">
 					<input id="playersearch" type="text" name="player" placeholder="Search player">
 				</form>
 
@@ -90,7 +90,7 @@ include_once('core/database.php');
 
 			<?php
 			
-			 if ($_POST) {
+			 if (isset($_POST['player'])) {
 
 			 	$player = $_POST['player'];
 

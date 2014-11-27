@@ -44,7 +44,7 @@ $querytitle = mysql_query("SELECT category_title FROM categories WHERE id='$cid'
 			while ($row = mysql_fetch_assoc($querytopics)){
 				$id = $row['id'];
 				$title = $row['topic_title'];
-				$topics = "<a href='view_topic.php?tid=$id' class='topic_link'>$title</a>";
+				$topics = "<div class='topic_link_area'><a href='view_topic.php?tid=$id' class='topic_link'>$title</a></div>";
 
 				echo $topics;
 			} 

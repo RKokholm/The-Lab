@@ -324,3 +324,21 @@ textarea {
 	box-sizing: border-box;
 	border-radius: 2px;
 }
+
+.topic_link{
+	text-decoration: none;
+	color: black;
+	margin: 4px 6px;
+	display: block;
+
+}
+
+.topic_link_area {
+	width: 100%;
+	background: rgb(239, 239, 239);
+	border: 1px solid rgb(200, 200, 200);
+	padding: 5px;
+	box-sizing: border-box;
+	border-radius: 2px;
+	margin: 10px 0px;
+}
