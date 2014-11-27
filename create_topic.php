@@ -41,10 +41,10 @@ include_once('core/database.php');
 			} 
 
 			if (empty($errors) === true) {
-				$sql = "INSERT INTO topics (category_id, topic_title, topic_creator, topic_content, ) VALUES ($cid, '$subject', '$username', '$content')";
+				$sql = "INSERT INTO topics (category_id, topic_title, topic_creator, topic_content) VALUES ($cid, '$subject', '$username', '$content')";
 				mysql_query($sql);
-				echo 'Success! You will be redirected';
-				header('refresh:3;url=forum.php');
+				$success = 'Success! You will be redirected';
+				header("refresh:3;url=forum.php");
 			};
 		}
 	}
@@ -57,5 +57,13 @@ include_once('core/database.php');
 			<textarea maxlength="2000" rows="16" cols="80" name="topic_content"></textarea>
 			<input type="submit" name="create_topic" value="Post" class="createtopic">
 		</form>
+
+		<?php
+
+		if(isset($success)){
+			echo $success;
+		}
+
+		?>
 
 <?php include_once('includes/footer.php') ?>

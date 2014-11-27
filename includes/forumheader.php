@@ -21,6 +21,7 @@ include_once('core/database.php');
 		<title>Draftpick | Forum</title>
 
 		<link rel="stylesheet" type="text/css" href="css/forumstyle.css">
+		<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 		
 		<meta charset="utf-8">
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>

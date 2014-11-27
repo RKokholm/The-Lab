@@ -342,3 +342,60 @@ textarea {
 	border-radius: 2px;
 	margin: 10px 0px;
 }
+
+.author {
+	float: right;
+	display: block;
+	margin: 0px 0px;
+	padding-left: 13px;
+	border-left: 1px solid rgb(195, 195, 195);
+	font-family: sans-serif;
+}
+
+.createbutton {
+	background: linear-gradient(rgb(50, 103, 147),rgb(37, 78, 112));
+	margin: 18px 0px;
+	width: 108px;
+	height: 18px;
+	padding: 8px;
+	border-radius: 3px;
+	box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.31);
+	border: 1px solid rgb(50, 82, 108);
+	text-align: center;
+}
+
+.createbutton:hover {
+	background: linear-gradient(rgb(50, 92, 147),rgb(23, 59, 100));
+	margin: 18px 0px;
+	width: 108px;
+	height: 18px;
+	padding: 8px;
+	border-radius: 3px;
+	box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.31);
+	border: 1px solid rgb(50, 82, 108);
+	text-align: center;
+}
+
+
+.createbutton a {
+	text-decoration: none;
+	color: white;
+	font-family: sans-serif;
+	display: block;
+}
+
+.fa fa-plus {
+	font-size: 10px;
+}
+
+.iconbutton {
+	background: linear-gradient(rgb(50, 103, 147),rgb(37, 78, 112));
+	margin: 18px 0px;
+	width: 108px;
+	height: 18px;
+	padding: 8px;
+	border-radius: 3px;
+	box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.31);
+	border: 1px solid rgb(50, 82, 108);
+	text-align: center;
+}

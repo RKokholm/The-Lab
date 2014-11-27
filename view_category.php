@@ -27,9 +27,11 @@ $querytitle = mysql_query("SELECT category_title FROM categories WHERE id='$cid'
 <?php
 
 	if (isset($_SESSION['id'])){
-		$logged = "<a href='create_topic.php?cid=".$cid."'>Click here to create a topic</a>";
+		$logged = "<div class='createbutton'><a href='create_topic.php?cid=".$cid."'>New topic</a></div>";
+		echo $logged;
 	} else {
-		$logged = "Please log in to create a topic";
+		$logged = "Please <a href='login.php'>log in</a> to create a topic";
+		echo $logged;
 	}
 
 	$query = mysql_query("SELECT id FROM categories WHERE id='".$cid."'");
@@ -44,14 +46,13 @@ $querytitle = mysql_query("SELECT category_title FROM categories WHERE id='$cid'
 			while ($row = mysql_fetch_assoc($querytopics)){
 				$id = $row['id'];
 				$title = $row['topic_title'];
-				$topics = "<div class='topic_link_area'><a href='view_topic.php?tid=$id' class='topic_link'>$title</a></div>";
+				$topics = "<div class='topic_link_area'><a href='view_topic.php?tid=$id' class='topic_link'>$title</a><span class='author'>By Author</span></div>";
 
 				echo $topics;
 			} 
 
 		} else {
 			echo 'No topics available in this category<br>';
-			echo $logged.' or ';
 			echo '<a href="forum.php" class="categoryerror">Return to forum</a>';
 		}
 
