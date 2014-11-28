@@ -11,7 +11,7 @@ $querytitle = mysql_query("SELECT topic_title FROM topics WHERE id='$tid'");
 
  	$title = mysql_fetch_assoc($querytitle);
 
- }
+ } 
 
 	$author = mysql_query("SELECT topic_creator FROM topics WHERE id=$tid");
 	$authorrow = mysql_fetch_assoc($author);
