@@ -36,14 +36,14 @@ include_once('core/database.php');
 			}
 
 			if ($check == true){
-				$errors[] = 'Topic subject and topic content must both be filled';
+				$errors[] = "<span class='topic_creation_message'>Topic subject and topic content must both be filled</span>";
 
 			} 
 
 			if (empty($errors) === true) {
 				$sql = "INSERT INTO topics (category_id, topic_title, topic_creator, topic_content) VALUES ($cid, '$subject', '$username', '$content')";
 				mysql_query($sql);
-				$success = 'Success! You will be redirected';
+				$success = "<span class='topic_creation_message'>Success! You will be redirected</span>";
 				header("refresh:3;url=forum.php");
 			};
 		}
@@ -64,6 +64,13 @@ include_once('core/database.php');
 			echo $success;
 		}
 
+		if(isset($errors)){
+			echo $errors[0];
+		}
+
+
 		?>
+
+
 
 <?php include_once('includes/footer.php') ?>
