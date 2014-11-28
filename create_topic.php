@@ -41,7 +41,13 @@ include_once('core/database.php');
 			} 
 
 			if (empty($errors) === true) {
-				$sql = "INSERT INTO topics (category_id, topic_title, topic_creator, topic_content) VALUES ($cid, '$subject', '$username', '$content')";
+
+				$queryauthor = mysql_query("SELECT username FROM users WHERE id=".$_SESSION['id']);
+				$row = mysql_fetch_assoc($queryauthor);
+				$topic_creator = $row['username'];
+
+
+				$sql = "INSERT INTO topics (category_id, topic_title, topic_creator, topic_content) VALUES ($cid, '$subject', '$topic_creator', '$content')";
 				mysql_query($sql);
 				$success = "<span class='topic_creation_message'>Success! You will be redirected</span>";
 				header("refresh:3;url=forum.php");

@@ -46,7 +46,7 @@ $querytitle = mysql_query("SELECT category_title FROM categories WHERE id='$cid'
 			while ($row = mysql_fetch_assoc($querytopics)){
 				$id = $row['id'];
 				$title = $row['topic_title'];
-				$topics = "<div class='topic_link_area'><a href='view_topic.php?tid=$id' class='topic_link'>$title</a><span class='author'>By Author</span></div>";
+				$topics = "<div class='topic_link_area'><a href='view_topic.php?tid=$id' class='topic_link'>".ucfirst($title)."</a><span class='author'>By Author</span></div>";
 				
 				echo $topics;
 			} 
