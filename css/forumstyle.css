@@ -330,6 +330,7 @@ textarea {
 	color: black;
 	margin: 4px 6px;
 	display: block;
+	font-family: sans-serif;
 
 }
 
@@ -437,6 +438,7 @@ textarea {
 
 .topic_text_area {
 	margin: 10px auto;
+	word-wrap: break-word;
 }
 
 .topic_author {
